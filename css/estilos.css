@@ -1,0 +1,104 @@
+.seccion1 {
+    background-color: #D4E2D4;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    margin-left: calc(7cm + 20px);
+    margin-right: calc(7cm + 20px);
+}
+.esquina{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.seccion2 {
+    background-color: #F4E4D5;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin-left: calc(7cm + 20px);
+    margin-right: calc(7cm + 20px);
+}
+.seccion3 {
+    background-color: #D3E2E3;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin-left: calc(7cm + 20px);
+    margin-right: calc(7cm + 20px);
+}
+.seccion4 {
+    background-color: #E4D3E2;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin-left: calc(7cm + 20px);
+    margin-right: calc(7cm + 20px);
+}
+.imagen-derecha {
+    float: right;
+    width: 50%; 
+    align-items: center;
+}
+
+.texto-izquierda {
+    float: left;
+    width: 50%; 
+    order: 1;
+}
+.derecha{
+    order: 2;
+}
+span{
+    font-size: 17px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background: radial-gradient(circle, #f7a7c0, #fff 40%, #7fe0e7);
+      height: 100vh;
+      margin: 0;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.green-button:hover {
+    background-color: #45a049;
+}
+
+.boton-azul{
+    background-color: #3c5ccc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+.boton-azul:hover{
+    background-color: #3c5ccc;
+}
+
+p{
+    color: red;
+    font-style: italic;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
+
+  <link rel="stylesheet" href="./Css/Style.css" />
+  <link rel="icon" type="image/x-icon" href="./Img/" />
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="text/javascript" src="js/funciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  </head>
+  <body>
+    <br><br>
+    <div class="seccion1">
+      <br><br>
+      <span class="esquina">Datos Personales</span>
+      <br><br>
+      <div class="texto-izqierda">
+        <form >
+          <br>
+          <div class="mb-3">
+            <label class="form-label">Nombre: </label><br>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe Tu Nombre">
+          </div>
+           <br><br>
+          <label>Apellido:</label><input type="text" class="form-control" id="apellido" name='apellido' placeholder="Escribe Tu apellido" required> <br><br>
+          
+          <label for="gen" class="form-label">Género</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gen" id="gen" value="M" required>
+                <label class="form-check-label" for="gen">
+                  M
+                </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gen" id="gen2" value="F" required>
+              <label class="form-check-label" for="gen2">
+                  F
+              </label>
+            </div>
+
+            <div class="mb-3">
+              <br>
+              <label for="exampleFormControlTextarea1" class="form-label">Fecha de Nacimiento</label>
+              <input type="text" id="fechaNac" name="fechaNac" class="form-control" id="txt_nombre" required
+                  placeholder="DD-MM-AA" />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Fecha de Ingreso</label>
+              <input type="text" class="form-control" id="fIngreso" name="fIngreso" placeholder="DD-MM-AA"
+                required />
+            </div>
+
+            <div>
+              <p>*Los datos deben ser Asignados DD-MM-AA</p>
+            </div>
+        </form>
+      </div>
+      <div class="derecha">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="" class="imagen-derecha">
+      </div>
+      <br>
+    </div>
+    <br>
+    <div class="seccion2">
+        <span class="esquina">Salario</span><br>
+        <label class="form-label">Salario</label>
+            <div class="input-group mb-3">
+              <label type="text" class="form-control" id="salario" name="salario"
+                aria-label="Example text with button addon" aria-describedby="button-addon1"></label>
+
+              <button class="btn btn-outline-secondary boton-azul" onclick="actualizarSalario()" type="button"
+                id="btn_modificar_salario">
+                Actualizar Salario
+              </button>
+            </div>
+    </div>
+    <br>
+    <div class="seccion3">
+      <span class="esquina">Calculos</span>
+      <br>
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary green-button"  type="button" id="btn_edad" onclick="edad_emple()">
+          Calcular Edad
+        </button>
+
+        <label type="text" class="form-control" id="inpedad" name="inpedad"
+          aria-label="Example text with button addon" aria-describedby="button-addon1" disabled></label>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary green-button" type="button" id="btn_antiguedad" onclick="antiguedad()">
+          Calcular Antiguedad
+        </button>
+        <label type="text" class="form-control" id="antig" name="antig"
+          aria-label="Example text with button addon " aria-describedby="button-addon2" disabled></label>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary green-button" type="button" id="btn_pestacion" onclick="prestacion()">
+          Calcular Prestaciones
+        </button>
+        <label type="text" class="form-control" id="presta" name="presta"
+          aria-label="Example text with button addon " aria-describedby="button-addon2" disabled></label>
+      </div>
+    </div>
+    <br>
+    
+    <div class="seccion4">
+      <span class="esquina">Puntos de Extension</span>
+      <br>
+      <button class="boton-degradado">Opcion 1</button>
+      <button class="boton-degradado">Opcion 2</button>
+    </div>
+
+    
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+  
+</html>
