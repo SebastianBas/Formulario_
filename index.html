@@ -116,13 +116,95 @@
     <br>
     
     <div class="seccion4">
-      <span class="esquina">Puntos de Extension</span>
-      <br>
-      <button class="boton-degradado">Opcion 1</button>
-      <button class="boton-degradado">Opcion 2</button>
+        <span class="esquina">Otros Datos De Informacion</span>
+        <br>
+        <label for="factor" class="form-label ">Nivel de estudios</label>
+        <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example" id="nivel" name="nivel"  placeholder="Nivel" required>
+            <option selected value="0">Seleccione nivel estudios </option>
+            <option value="Primaria">Primaria</option>
+            <option value="Bachillerato">Bachillerato</option>
+            <option value="Tecnico">Tecnico</option>
+            <option value="Tecnologo">Tecnologo</option>
+            <option value="Profesional">Profesional</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Insitucion donde Curso Sus Estudios</label>
+            <input type="text" class="form-control" id="instituto" name='instituto' placeholder="Institucion"
+              required />
+          </div>
+    
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Titulo que Obtuvo</label>
+            <input type="text" class="form-control" id="titulo" name='titulo' placeholder="Titulo"
+              required />
+          </div>
+    
+          
+          <div class="text-center">
+            <button type="button" class="btn btn-primary" onclick="mostrar_datos()" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Mostrar Informacion
+            </button>
+          </div>
     </div>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel ">Informacion del empleado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="verInfo">
+              <table class="table">
+                <tr>
+                  <th>
+
+                    <div class="mb-3">
+
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Genero</th>
+                            <th scope="col">Fecha de nacimiento</th>
+                            <th scope="col">Fecha ingreso</th>
+                            <th scope="col">Salario basico</th>
+                            <th scope="col">Nivel</th>
+                            <th scope="col">Instituto</th>
+                            <th scope="col">Título</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td id="nomMos"></td>
+                            <td id="apeMos"></td>
+                            <td id="genMost"></td>
+                            <td id="fechaNacMos"></td>
+                            <td id="fechaIngMos"></td>
+                            <td id="salMos"></td>
+                            <td id="nivMos"></td>
+                            <td id="institMos"></td>
+                            <td id="titulMos"></td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+            </div>
+          </div>
+        </div>
+
     
+
+    </div>
 
     <!-- End your project here-->
 
